@@ -6,10 +6,10 @@
   "license": "MIT",
   "repo": "",
   "issue": "",
-  "author": "André Augusto Tissot",
+  "author": "MobileMarines",
   "repository": {
     "type": "git",
-    "url": "https://github.com/andrehtissot/cordova-plugin-fcm-with-dependecy-updated"
+    "url": "https://github.com/mobilemarines/cordova-plugin-fcm-with-dependecy-updated"
   },
   "keywords": [
     "ecosystem:cordova",

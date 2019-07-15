@@ -11,10 +11,8 @@
 [![DeepScan grade](https://deepscan.io/api/teams/3417/projects/5068/branches/39495/badge/grade.svg)](https://deepscan.io/dashboard#view=project&tid=3417&pid=5068&bid=39495)
 
 ## Authorship
-This is a fork from https://github.com/fechanique/cordova-plugin-fcm with behind-the-scenes improvements.
-
-This fork has its google and firebase dependencies versions defined, which is necessary to avoid cordova build errors.
-
+This is a fork from https://github.com/andrehtissot/cordova-plugin-fcm-with-dependecy-updated
+with adjustments to make this plugin work with Ionic 4 and Cordova 8.
 
 #### Version 2.1.2 (03/06/2017)
 - Tested on Android and iOS using Cordova cli 6.4.0, Cordova android 6.0.0 and Cordova ios 4.3.1
@@ -27,6 +25,13 @@ This fork has its google and firebase dependencies versions defined, which is ne
 Make sure you have ‘google-services.json’ for Android or  ‘GoogleService-Info.plist’ for iOS in your Cordova project root folder. You don´t need to configure anything else in order to have push notification working for both platforms, everything is magic.
 ```Bash
 cordova plugin add cordova-plugin-fcm-with-dependecy-updated
+
+Adjust package.json to:
+"cordova-plugin-fcm-with-dependecy-updated": "git+https://github.com/mobilemarines/cordova-plugin-fcm.git#cordova8"
+
+Adjust config.xml to:
+<plugin name="cordova-plugin-fcm-with-dependecy-updated" spec="https://github.com/mobilemarines/cordova-plugin-fcm.git#cordova8" />
+
 ```
 
 #### Firebase configuration files
